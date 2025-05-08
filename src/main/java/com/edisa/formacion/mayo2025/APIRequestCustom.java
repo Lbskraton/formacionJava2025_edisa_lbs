@@ -20,14 +20,12 @@ public class APIRequestCustom {
 
     public static Document ObtainXMLFromApi() throws IOException, ParserConfigurationException, SAXException {
         String urlStr="https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
-        String divisaOrigen="USD";
-        String divisaDestino="JPY";
-        Double importe= 12233.0;
+
 
         Document document=null;
         try{
             //Creo un objeto URL de la librería java.net
-            URL url=new URL("https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
+            URL url=new URL(urlStr);
             //Me conecto con java.net
             HttpURLConnection connetc= (HttpURLConnection) url.openConnection();
 

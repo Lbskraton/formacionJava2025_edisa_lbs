@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Exercise2 {
+public class ExerciseQR3Params {
 
     public static Boolean checkNumberArguments(String[] ar) {
         Boolean valid = false;
