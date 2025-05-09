@@ -14,7 +14,14 @@ public class ExerciseQRDropWizardLogic {
 
     public static BufferedImage createBufferedImage(File f) throws IOException {
         BufferedImage buffimg=null;
-        buffimg= ImageIO.read(f);
+        try{
+            buffimg= ImageIO.read(f);
+        }catch(IOException e) {
+            throw new IOException("Error al abrir la imagen con Image.IO creando la buffered image: \n"+e.getMessage());
+        }
+
+
+
         return buffimg;
     }
 
