@@ -107,7 +107,7 @@ public class ExerciseQRDropWizardLogic {
             //Uso de la clase luminanceSource que segun la descripcion
             //The purpose of this class hierarchy is to abstract different bitmap implementations across platforms into a standard interface
             BufferedImageLuminanceSource lumina=new BufferedImageLuminanceSource(buffimg);
-            //Lo paso por el hibridBin binarizer
+            //Lo paso por el hibridBin binarizer, que es una subclase de binarizer que transforma luminance data en 1bit data
             HybridBinarizer binarizer=new HybridBinarizer(lumina);
             //Genero un bitmap a partir del binarizer
             bitmap=new BinaryBitmap(binarizer);

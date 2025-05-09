@@ -123,7 +123,7 @@ public class APIRequestCustom {
                 String origen="";
                 String destino="";
                 double importe;
-                double origenRate,destinoRate;
+
 
                 if(args[0].length()>3){
                     throw new IllegalArgumentException("El numero enviado como paramaetro "+0+" debe de ser un string de tamanho 3, suministrado un "+args[0]);

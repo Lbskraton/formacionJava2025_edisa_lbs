@@ -27,6 +27,20 @@ public class ExerciseQRWizardResources {
         return Response.ok().entity(f).build();
     }
 
+    @POST
+    @Path("/decipherQR")
+    @Consumes({MediaType.APPLICATION_JSON})
+    public Response decipherQR(ExerciseQRDropWizardBody body){
+        try {
+            ExerciseQRDropWizardLogic.processQR(body.getBase64());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
+        return Response.ok().entity(f).build();
+    }
+
 
 
 
