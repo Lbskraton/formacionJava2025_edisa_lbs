@@ -1,4 +1,4 @@
-package com.edisa.formacion.mayo2025;
+package com.edisa.formacion.mayo2025.DropWizard;
 
 import java.io.File;
 
